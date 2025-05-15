@@ -6,4 +6,6 @@ const apiKeyMiddleware = require("../config/apiKey");
 
 router.get("/", apiKeyMiddleware, estudanteController.getAllEstudantes);
 
+
+
 module.exports = router;
