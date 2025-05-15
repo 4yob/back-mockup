@@ -4,7 +4,7 @@ const router = express.Router();
 const estudanteController = require("../controllers/estudanteController");
 const apiKeyMiddleware = require("../config/apiKey");
 
-router.get("/", apiKeyMiddleware, estudanteController.getAllEstudantes);
+router.get("/", estudanteController.getAllEstudantes);
 
 
 
